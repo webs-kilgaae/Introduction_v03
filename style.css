@@ -1,0 +1,21 @@
+h2 {
+  line-height: 1.6em;
+  margin: 0;
+}
+
+main {
+  position: relative;
+}
+
+section {
+  width: 297mm;
+  height: 210mm;
+  border: 1px solid #ddd;
+  background-image: linear-gradient(90deg, #eee 1px, transparent 1px), linear-gradient(#eee 1px, transparent 1px);
+  background-size: 33px 33px;
+  background-position: center;
+}
+
+aside {
+  position: fixed;
+}/*# sourceMappingURL=style.css.map */
