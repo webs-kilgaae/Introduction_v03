@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* .roboto-regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.roboto-medium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.roboto-bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+} */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+
+html,
+body {
+	position: relative;
+	line-height: normal;
+	-webkit-text-size-adjust: none;
+
+	font-family: 'Noto Sans KR', Sans-serif;
+	font-weight: 400;
+	font-size: 62.5%;
+	line-height: 1.285;
+	word-break: keep-all;
+	color: #333;
+}
+
+.wrap {
+	font-size: 1.6rem;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+sup {
+	font-size: 60%;
+}
+
+em {
+	font-style: normal;
+}
+
+input {
+	-webkit-apperance: none;
+	display: inline-block;
+	box-sizing: border-box;
+	/* font-family: "NotoSans" ,Sans-serif; */
+	background-color: #fff;
+}
+
+input[type='text']::-ms-clear {
+	display: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+select {
+	/* font-family: "NotoSans" ,Sans-serif; */
+	appearance: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	/* font-family: "NotoSans" ,Sans-serif; */
+}
+
+i {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	/* font-family: "NotoSans" ,Sans-serif; */
+	font-weight: 400;
+	cursor: pointer;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+.hidden {
+	display: none !important;
+	overflow: hidden;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 1px;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+input,
+textarea,
+button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+/* input box color */
+/* input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #fff inset;
+	-webkit-text-fill-color: #666;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:disabled {
+	-webkit-box-shadow: 0 0 0 30px #f6f6f6 inset;
+} */
+
+/* IE의 경우 */
+input::-ms-clear,
+input::-ms-reveal {
+	display: none;
+}
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+	display: none;
+}
+
+span {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
