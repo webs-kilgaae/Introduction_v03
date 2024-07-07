@@ -906,6 +906,9 @@ section {
 		dt {
 			margin-bottom: 1rem;
 		}
+		dd {
+			word-break: break-all !important;
+		}
 	}
 
 	.etc {
@@ -915,6 +918,9 @@ section {
 		}
 		.content {
 			padding: 2rem;
+		}
+		dt {
+			word-break: break-all !important;
 		}
 		dl {
 			+ dl {
