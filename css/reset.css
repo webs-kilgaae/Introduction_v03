@@ -18,6 +18,29 @@
 	font-style: normal;
 } */
 
+@font-face {
+	font-family: 'Cafe24Moyamoya-Regular-v1.0';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ONE-Mobile-POP';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JalnanGothic';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -26,6 +49,7 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	word-break: keep-all;
+	transition: all 0.3s;
 }
 
 html,
@@ -37,7 +61,7 @@ body {
 	font-family: 'Noto Sans KR', Sans-serif;
 	font-weight: 400;
 	font-size: 62.5%;
-	line-height: 1.285;
+	line-height: 1.6;
 	word-break: keep-all;
 	color: #333;
 }

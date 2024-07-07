@@ -5,13 +5,16 @@
 		init() {
 			this.mainScroll();
 			this.tabList();
+			this.accList();
 			this.popupEvent();
+			this.mo();
 		},
 
 		// 메인 스크롤 이벤트
 		mainScroll() {
 			const visual = document.querySelector('.visual');
 			const mainTop = document.querySelector('.top');
+			const btnFloating = document.querySelector('.btn_floating');
 
 			let i = 85; //상단 높이값
 			window.addEventListener('scroll', () => {
@@ -20,23 +23,25 @@
 				if (i < currentScrollY) {
 					visual.classList.add('active');
 					mainTop.classList.add('floating');
+					btnFloating.classList.add('floating');
 				} else {
 					visual.classList.remove('active');
 					mainTop.classList.remove('floating');
+					btnFloating.classList.remove('floating');
 				}
 
-				const platformCon = [...document.querySelectorAll('section')];
+				// const platformCon = [...document.querySelectorAll('section')];
 
-				platformCon.forEach((el) => {
-					const currentTop = el.offsetTop + 20;
-					currentTop <= currentScrollY ? el.classList.add('active') : el.classList.remove('active');
-				});
+				// platformCon.forEach((el) => {
+				// 	const currentTop = el.offsetTop + 20;
+				// 	currentTop <= currentScrollY ? el.classList.add('active') : el.classList.remove('active');
+				// });
 
-				const stars = [...document.querySelectorAll('.icon_stars')];
-				stars.forEach((el) => {
-					const currentTop = el.offsetTop - 600;
-					currentTop <= currentScrollY ? el.classList.add('shine') : el.classList.remove('shine');
-				});
+				// const stars = [...document.querySelectorAll('.icon_stars')];
+				// stars.forEach((el) => {
+				// 	const currentTop = el.offsetTop - 600;
+				// 	currentTop <= currentScrollY ? el.classList.add('shine') : el.classList.remove('shine');
+				// });
 			});
 		},
 
@@ -44,6 +49,46 @@
 		//https://happy-hee8.tistory.com/4
 
 		// https://zthcoding.tistory.com/entry/Javascript-스크롤에-따라-박스-크기-글자-크기-위치-조정하기
+
+		accList() {
+			const accItem = [...document.querySelectorAll('.acc')];
+
+			accItem.forEach((el) => {
+				el.addEventListener('click', function () {
+					accItem.forEach((e, i) => {
+						const $target = e.nextElementSibling;
+						if (accItem[i] !== el) e.classList.remove('on');
+						gsap.to($target, {
+							duration: 0.6,
+							height: 0,
+							display: 'none',
+						});
+					});
+
+					el.classList.toggle('on');
+					const $target = el.nextElementSibling;
+
+					if (el.classList.contains('on') === true) {
+						gsap.set($target, {
+							height: 0,
+							display: 'block',
+						});
+						gsap.to($target, {
+							duration: 0.6,
+							height: 'auto',
+							display: 'block',
+						});
+					} else {
+						el.classList.remove('on');
+						gsap.to($target, {
+							duration: 0.6,
+							height: 0,
+							display: 'none',
+						});
+					}
+				});
+			});
+		}, //accList()
 
 		tabList() {
 			const tabItem = [...document.querySelectorAll('.tab')];
@@ -140,6 +185,22 @@
 				});
 			});
 		}, //popupEvent()
+
+		mo() {
+			if (matchMedia('screen and (max-width: 768px)').matches) {
+				const contentTab = [...document.querySelectorAll('.content .tab')];
+				contentTab.forEach((el) => {
+					el.classList.add('active');
+				});
+
+				const topArrow = document.querySelector('.top_arrow');
+				const topWrap = topArrow.closest('.top');
+
+				topArrow.addEventListener('click', function () {
+					topWrap.classList.toggle('hide');
+				});
+			}
+		},
 	};
 
 	ui.init();
