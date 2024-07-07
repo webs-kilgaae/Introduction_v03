@@ -645,6 +645,7 @@ section {
 		}
 		&4 {
 			font-size: 2rem;
+			color: var(--deep_gray);
 		}
 	}
 
@@ -732,8 +733,7 @@ section {
 				background-color: rgba(34, 34, 34, 0.4392156863);
 				color: #fff;
 				span {
-					display: block;
-					transition: all 0.3s;
+					color: #fff;
 				}
 			}
 		}
@@ -756,6 +756,11 @@ section {
 			border-radius: 20% 0 0 20%;
 			background: rgba(255, 255, 255, 0.5019607843);
 			font-size: 1.8rem;
+			span {
+				display: block;
+				color: var(--deep_gray);
+				transition: all 0.3s;
+			}
 		}
 	}
 
@@ -763,16 +768,6 @@ section {
 		.hd {
 			&_wrap {
 				padding: 2rem 2rem;
-			}
-		}
-	}
-
-	.icon {
-		&_stars {
-			&::before {
-				width: 3rem;
-				height: 3rem;
-				font-size: 3rem;
 			}
 		}
 	}
@@ -854,6 +849,7 @@ section {
 			p {
 				font-size: 1.6rem;
 				line-height: 1.6;
+				color: var(--deep_gray);
 			}
 		}
 		time {
@@ -928,6 +924,9 @@ section {
 		dd {
 			padding-left: 1.4rem;
 			font-size: 1.6rem;
+		}
+		span {
+			display: block;
 		}
 	}
 }
