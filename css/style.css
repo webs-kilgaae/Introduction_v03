@@ -34,7 +34,7 @@ h1 {
   font-family: "Cafe24Moyamoya-Regular-v1.0";
   font-weight: normal;
   font-style: normal;
-  font-size: 7rem;
+  font-size: 6rem;
   color: #fff;
   line-height: 1;
 }
@@ -336,7 +336,7 @@ section .title + .content {
   width: 50%;
 }
 .visual_box dd {
-  margin-top: 6rem;
+  margin-top: 2.2rem;
 }
 .visual_box dd * {
   color: #fff;
