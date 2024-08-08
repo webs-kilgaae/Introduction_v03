@@ -195,7 +195,7 @@
 			// const jbMedia = window.matchMedia('( max-width: 768px )');
 			// if (jbMedia.matches == true) {
 
-			if (matchMedia('screen and (max-width: 768px)').matches) {
+			if (matchMedia('screen and (max-width: 1100px)').matches) {
 				const contentTab = [...document.querySelectorAll('.content .tab')];
 				contentTab.forEach((el) => {
 					el.classList.add('active');
