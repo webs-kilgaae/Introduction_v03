@@ -818,6 +818,7 @@ section .title + .content {
 	.about_me dd {
 		font-size: 1.4rem;
 		margin-top: 0;
+		color: #333;
 	}
 	.about_me dd span {
 		font-size: 2rem;
