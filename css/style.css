@@ -836,6 +836,9 @@ section .title + .content {
   .work_link {
     padding: 1rem 0 2rem;
   }
+  .work_link span {
+    font-size: 1.5rem;
+  }
   .work_link span::before {
     font-size: 1.6rem;
   }
