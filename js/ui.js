@@ -16,7 +16,7 @@
 			const mainTop = document.querySelector('.top');
 			const btnFloating = document.querySelector('.btn_floating');
 
-			let i = 85; //상단 높이값
+			let i = 500; //상단 높이값
 			window.addEventListener('scroll', () => {
 				let currentScrollY = window.scrollY;
 
@@ -59,8 +59,9 @@
 						const $target = e.nextElementSibling;
 						if (accItem[i] !== el) e.classList.remove('on');
 						gsap.to($target, {
-							duration: 0.6,
+							duration: 0.3,
 							height: 0,
+							opacity: 0,
 							display: 'none',
 						});
 					});
@@ -70,20 +71,24 @@
 
 					if (el.classList.contains('on') === true) {
 						gsap.set($target, {
+							duration: 0.3,
 							height: 0,
+							opacity: 0,
 							display: 'block',
 						});
 						gsap.to($target, {
-							duration: 0.6,
+							duration: 0.3,
 							height: 'auto',
+							opacity: 1,
 							display: 'block',
 						});
 					} else {
 						el.classList.remove('on');
 						gsap.to($target, {
-							duration: 0.6,
+							duration: 0.3,
 							height: 0,
-							display: 'none',
+							opacity: 0,
+							display: 'block',
 						});
 					}
 				});
@@ -187,17 +192,24 @@
 		}, //popupEvent()
 
 		mo() {
+			// const jbMedia = window.matchMedia('( max-width: 768px )');
+			// if (jbMedia.matches == true) {
+
 			if (matchMedia('screen and (max-width: 768px)').matches) {
 				const contentTab = [...document.querySelectorAll('.content .tab')];
 				contentTab.forEach((el) => {
 					el.classList.add('active');
+					// el.stopPropagation();
+					// el.addEventListener('click', function () {
+					// 	el.stopPropagation();
+					// });
 				});
 
 				const topArrow = document.querySelector('.top_arrow');
 				const topWrap = topArrow.closest('.top');
 
 				topArrow.addEventListener('click', function () {
-					topWrap.classList.toggle('hide');
+					topWrap.classList.toggle('open');
 				});
 			}
 		},
