@@ -57,12 +57,6 @@ h3 span {
 h3 span.bold {
   color: var(--deep_gray);
 }
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1;
-}
 
 [class*=_round] {
   display: inline-flex;
@@ -81,6 +75,11 @@ h4 {
 .text_02 {
   font-family: "ONE-Mobile-POP";
   font-size: 2.2rem;
+}
+.text_03 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
 }
 .text_stick {
   position: relative;
@@ -663,10 +662,6 @@ section .title + .content {
   h3 {
     font-size: 2.4rem;
   }
-  h4 {
-    font-size: 1.8rem;
-    color: var(--deep_gray);
-  }
   [class*=_round] {
     min-height: 3rem;
     padding: 0.4rem 1.6rem;
@@ -676,6 +671,9 @@ section .title + .content {
     font-size: 2rem;
   }
   .text_02 {
+    font-size: 1.6rem;
+  }
+  .text_03 {
     font-size: 1.6rem;
   }
   .text_stick::before {
@@ -835,9 +833,6 @@ section .title + .content {
   }
   .work_link {
     padding: 1rem 0 2rem;
-  }
-  .work_link span {
-    font-size: 1.5rem;
   }
   .work_link span::before {
     font-size: 1.6rem;
