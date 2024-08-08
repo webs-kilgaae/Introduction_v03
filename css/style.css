@@ -77,7 +77,6 @@ h3 span.bold {
   font-size: 2.2rem;
 }
 .text_03 {
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   line-height: 1;
 }
@@ -443,17 +442,12 @@ section .title + .content {
   text-align: left;
 }
 .work_tit .date {
+  margin-left: 1rem;
   font-size: 1.6rem;
   font-weight: 400;
-  margin-left: 1rem;
 }
-.work_tit p {
+.work_text {
   margin: 1rem 0 0 1rem;
-  line-height: 2;
-}
-.work_tit p span {
-  display: block;
-  font-weight: 600;
 }
 .work_link {
   display: block;
@@ -505,10 +499,10 @@ section .title + .content {
   padding: 3rem;
 }
 .work .depth_one .tit {
+  margin-right: 1rem;
   font-size: 1.8rem;
 }
 .work .depth_one .tit span {
-  margin-left: 1rem;
   color: var(--gray_02);
   font-size: 1.4rem;
 }
@@ -817,7 +811,7 @@ section .title + .content {
     font-size: 1.5rem;
   }
   .work_tit {
-    padding: 2.4rem 2rem 1rem;
+    padding: 2rem 1.4rem 1rem;
   }
   .work_tit .date {
     font-size: 1.3rem;
@@ -827,22 +821,19 @@ section .title + .content {
     top: 2rem;
     font-size: 1.8rem;
   }
-  .work_tit p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-  }
   .work_link {
-    padding: 1rem 0 2rem;
+    padding: 0.6rem 0 1.4rem;
   }
   .work_link span::before {
-    font-size: 1.6rem;
+    transform: translateY(-58%);
+    font-size: 1.5rem;
   }
   .work_link:hover span::after {
     display: none;
   }
   .work .depth_one {
     margin: 0 2rem;
-    padding: 2rem 0;
+    padding: 2rem 1.2rem;
   }
   .work .depth_one .tit {
     font-size: 1.6rem;
